@@ -12,7 +12,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>极简PPT</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -29,7 +29,7 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="//at.alicdn.com/t/font_2994525_118dhzro8bs.css">
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_2994525_m9ofy4qw8pi.css">
 
 		<!-- Printing and PDF exports -->
 		<!-- <script>
@@ -63,10 +63,16 @@
 				<div class="tab active"><span class="iconfont icon-edit"></span> 内容编辑</div>
 				<div class="tab"><span class="iconfont icon-theme"></span> 主题与特效</div>
 				<div class="tab download"><span class="iconfont icon-download"></span> 下载PDF</div>
+				<div class="tab"><span class="iconfont icon-speaker"></span>演讲者模式</div>
+				<div class="tab"><span class="iconfont icon-help"></span>帮助</div>
 				<div class="content active">
 					<div class="header">编辑</div>
 					<div class="body editor">
 						<textarea></textarea>
+						<div class="uploader">
+							<input type="file" id="img-uploader" accept="image/*">
+							<label for="img-uploader">点击上传图片(支持 .png、.jpg、.gif,最大2M)</label>
+						</div>
 						<div>
 							<button class="button-save">保存</button>
 						</div>
@@ -144,6 +150,21 @@
 					<div class="header">下载</div>
 					<div class="body download">
 						<h5>下载PDF</h5>
+					</div>
+				</div>
+				<div class="content">
+					<div class="header">演讲者模式</div>
+					<div class="body speaker">
+						<p>按<strong>S</strong>键，开启演讲者模式</p>
+					</div>
+				</div>
+				<div class="content">
+					<div class="header">帮助</div>
+					<div class="body help">
+						<p># 代表一级标题</p>
+						<p>## 代表二级标题</p>
+						<p>### 如果三个#出现在某个二级标题和一级标题下面的话，那它代表它的子页面，可以向下滑动</p>
+						<p>如果四个#或者更多个# 代表它是当前页面下的子段落</p>
 					</div>
 				</div>
 			</div>

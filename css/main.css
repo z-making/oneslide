@@ -148,6 +148,20 @@ button:hover{
   color: #111;
 }
 
+.menu .editor [type=file]{
+  display: none;
+}
+
+.menu .editor .uploader{
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+.menu .editor label{
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .menu .content button{
   margin-top: 16px;
 }
@@ -196,4 +210,18 @@ button:hover{
 .menu .theme .transition,
 .menu .theme .align{
   margin-top: 20px;
+}
+
+/* 演讲者模式 */
+.menu .content .speaker>p{
+  color: aliceblue;
+  font-size: 20px;
+}
+
+/* 帮助 */
+
+.menu .content .help>p{
+  margin-top: 20px;
+  font-size: 20px;
+  color: aliceblue;
 }

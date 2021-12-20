@@ -127,6 +127,24 @@ const Menu = {
   }
 }
 
+
+// const ImgUploader = {
+//   init(){
+//     this.$fileInput = $('#img-uploader')
+
+//     this.bind()
+//   },
+//   bind(){
+//     this.$fileInput.onchange= function(){
+
+//     }
+//   }
+// }
+
+
+
+
+
 const Editor = {
   init(){
     this.$editInput = $('.editor textarea')
